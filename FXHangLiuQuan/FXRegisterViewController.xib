@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FXRegisterViewController">
+            <connections>
+                <outlet property="masBtn" destination="JsZ-il-gN0" id="dBC-ra-0hH"/>
+                <outlet property="textField" destination="WkQ-jv-xvg" id="kK2-1w-wb7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的手机号？" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmM-3e-tb8">
+                    <rect key="frame" x="109" y="130" width="102" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="K1x-x5-EVi"/>
+                        <constraint firstAttribute="width" constant="102" id="qin-tL-kcU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   请输入您的手机号" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WkQ-jv-xvg">
+                    <rect key="frame" x="24" y="171" width="273" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="273" id="3Bq-Gv-xok"/>
+                        <constraint firstAttribute="height" constant="30" id="wdn-NE-cXM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsZ-il-gN0">
+                    <rect key="frame" x="24" y="221" width="273" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.18823529410000001" green="0.61960784310000006" blue="0.36470588240000001" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="273" id="Icg-PQ-nQ0"/>
+                        <constraint firstAttribute="height" constant="40" id="Ype-VV-YA1"/>
+                    </constraints>
+                    <state key="normal" title="发送验证码">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sendMas:" destination="-1" eventType="touchUpInside" id="chO-4T-wwj"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3j-yf-aIq">
+                    <rect key="frame" x="20" y="518" width="120" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="9HI-Hr-ZSC"/>
+                        <constraint firstAttribute="height" constant="20" id="Bxt-nC-s8N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="已有韩流圈账户？">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="login:" destination="-1" eventType="touchUpInside" id="Nrf-ZG-ADp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.1137254902" green="0.84705882349999995" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="JsZ-il-gN0" secondAttribute="centerX" id="7lw-69-IQo"/>
+                <constraint firstAttribute="bottom" secondItem="o3j-yf-aIq" secondAttribute="bottom" constant="30" id="BLz-Zl-0XN"/>
+                <constraint firstItem="WkQ-jv-xvg" firstAttribute="top" secondItem="mmM-3e-tb8" secondAttribute="bottom" constant="20" id="HDO-ck-N2O"/>
+                <constraint firstItem="JsZ-il-gN0" firstAttribute="top" secondItem="WkQ-jv-xvg" secondAttribute="bottom" constant="20" id="VKZ-Mt-5fv"/>
+                <constraint firstAttribute="centerX" secondItem="mmM-3e-tb8" secondAttribute="centerX" id="iUP-Ik-Wbq"/>
+                <constraint firstItem="mmM-3e-tb8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="130" id="k4p-oa-dp5"/>
+                <constraint firstAttribute="centerX" secondItem="WkQ-jv-xvg" secondAttribute="centerX" id="w5N-tw-3NW"/>
+                <constraint firstItem="o3j-yf-aIq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="wcg-pR-3F3"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FXWriteViewController">
+            <connections>
+                <outlet property="contentTextV" destination="lUH-QI-XGg" id="okk-Lg-Mqi"/>
+                <outlet property="titleTextField" destination="XtF-r5-pyR" id="NFF-8G-geX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="还没写标题" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XtF-r5-pyR">
+                    <rect key="frame" x="64" y="76" width="236" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="IdP-3y-ISj"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题 |" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdp-Ai-eJQ">
+                    <rect key="frame" x="20" y="80" width="43" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="43" id="vPh-ei-7Gw"/>
+                        <constraint firstAttribute="height" constant="21" id="x6s-z3-c9k"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzG-6u-vpz">
+                    <rect key="frame" x="20" y="109" width="280" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="08Y-oA-ohD"/>
+                    </constraints>
+                </view>
+                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正文" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMj-zr-okb">
+                    <rect key="frame" x="20" y="130" width="34" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="cWp-1Q-CRw"/>
+                        <constraint firstAttribute="height" constant="21" id="hwA-2S-Q7l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView appearanceType="aqua" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUH-QI-XGg">
+                    <rect key="frame" x="59" y="130" width="241" height="180"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="2HX-yH-v0f"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VMj-zr-okb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="04V-HZ-AK8"/>
+                <constraint firstItem="lUH-QI-XGg" firstAttribute="top" secondItem="jzG-6u-vpz" secondAttribute="bottom" constant="20" id="6AD-Iy-62J"/>
+                <constraint firstAttribute="trailing" secondItem="XtF-r5-pyR" secondAttribute="trailing" constant="20" id="EIf-zx-hbP"/>
+                <constraint firstItem="lUH-QI-XGg" firstAttribute="leading" secondItem="VMj-zr-okb" secondAttribute="trailing" constant="5" id="JZn-Nr-mKU"/>
+                <constraint firstItem="XtF-r5-pyR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="QfI-lg-t7Y"/>
+                <constraint firstItem="jzG-6u-vpz" firstAttribute="top" secondItem="kdp-Ai-eJQ" secondAttribute="bottom" constant="8" id="RWj-kY-qUB"/>
+                <constraint firstAttribute="trailing" secondItem="lUH-QI-XGg" secondAttribute="trailing" constant="20" id="V3V-9i-Q5R"/>
+                <constraint firstItem="VMj-zr-okb" firstAttribute="top" secondItem="jzG-6u-vpz" secondAttribute="bottom" constant="20" id="V6N-o4-mHl"/>
+                <constraint firstAttribute="trailing" secondItem="jzG-6u-vpz" secondAttribute="trailing" constant="20" id="W6i-3q-8CB"/>
+                <constraint firstItem="kdp-Ai-eJQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="YGw-in-d0q"/>
+                <constraint firstItem="kdp-Ai-eJQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="gC7-Dp-U9H"/>
+                <constraint firstItem="jzG-6u-vpz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="npx-vM-p5F"/>
+                <constraint firstItem="XtF-r5-pyR" firstAttribute="leading" secondItem="kdp-Ai-eJQ" secondAttribute="trailing" constant="1" id="xAm-7O-uj1"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
